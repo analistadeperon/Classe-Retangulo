@@ -19,6 +19,15 @@ namespace Course {
  }
  else {
  return 60.0 - NotaFinal();
+  else {
+ Console.WriteLine("REPROVADO");
+ Console.WriteLine("FALTARAM "
+ + aluno.NotaRestante().ToString("F2", CultureInfo.InvariantCulture)
+ + " PONTOS");
+ }
+ }
+ }
+}
  }
  }
  }
